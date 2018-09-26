@@ -1,0 +1,21 @@
+/*
+目的：开始C语言的学习
+*/
+
+#include <stdio.h>
+int main(void)
+{
+    printf("HELLOWORLD!!!\n");
+
+       return 0;              
+}
+
+/*
+    在VS中的输出结果是：
+	------------------------
+	HELLOWORLD!!!
+	------------------------
+
+	心得：正式开始C的学习
+
+*/

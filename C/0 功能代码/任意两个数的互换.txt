@@ -1,0 +1,20 @@
+/*
+    2018年9月21日08:24:59
+	功能：任意两个数的互换
+*/
+# include <stdio.h>
+
+int main(void)
+{
+	int i = 3;
+	int j = 4;
+	int t;
+
+	t = i;
+	i = j;
+	j = t;
+
+	printf("i = %d, j = %d", i, j);
+
+	return 0;
+}

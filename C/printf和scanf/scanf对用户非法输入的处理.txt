@@ -1,0 +1,42 @@
+/*
+    2018年9月17日21:55:49
+	目的：scanf对用户非法输入的处理。
+*/
+
+# include <stdio.h>
+
+int main(void)
+{
+	int i;
+	char ch;
+	int j;
+
+	scanf("%d", &i);
+	printf("i = %d\n", i);
+
+	//此处省略十万行代码。。。
+
+	while ( (ch=getchar()) !='\n')
+		continue;
+	
+	scanf("%d", &j);
+	printf("j = %d\n", j);
+	/*
+	int j;  //不能在中间声明变量?
+	scanf("%d", &j);
+	printf("j = %d\n", j);
+	*/
+	return 0;
+} 
+
+/*
+    发现问题：不能在中间声明变量，要在一开始就声明，不然报错
+
+	在VS中的输出结果是：
+	------------------
+132safsfdf saf   
+i = 132
+564
+j = 564
+	------------------
+*/

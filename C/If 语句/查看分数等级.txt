@@ -1,0 +1,43 @@
+/*
+    2018年9月21日00:32:41
+	功能：求分数等级
+	目的：学习if语句的使用
+*/
+# include <stdio.h>
+
+int main(void)
+{
+	float  score;
+
+	printf("请输入您的考试成绩（按回车键结束查看等级）：");
+	scanf("%f", &score);
+	printf("%f\n", score);
+
+	if (score > 100)
+		printf("您在做梦吗？\n");
+	else if (score >= 90 && score <= 100)
+		printf("优秀大学生！\n");
+	else if (score >= 80 && score < 90)
+		printf("成绩不错嘛！\n");
+	else if (score >= 60 && score < 80)
+		printf("幸好没挂科！\n");
+	else if (score >=0 && score < 60)
+		printf("万万没想到！\n");
+	else 
+		printf("输入有误(#`O′)！\n");
+
+	printf("%d\n", score);
+
+	return 0;
+}
+/*
+在VS2010中输出的结果是：
+————————————
+请输入您的考试成绩（按回车键结束查看等级）：-500
+-500.000000
+输入有误(#`O′)！
+0
+————————————
+    
+	心得：注意使用printf与scanf的时候，要使用定义的变量时，要与之保持一致。
+*/

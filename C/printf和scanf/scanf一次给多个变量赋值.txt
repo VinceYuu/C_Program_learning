@@ -1,0 +1,18 @@
+/*
+    2018年9月17日21:24:24
+	目的：尝试使用scanf一次给多个变量赋值。
+*/
+# include <stdio.h>
+
+int main(void)
+{
+	int i, j, k;
+
+	scanf("%d %d %d", &i, &j, &k);
+	printf("i = %d, j = %d, k = %d\n", i, j, k);
+
+	return 0;
+}
+/*
+
+*/

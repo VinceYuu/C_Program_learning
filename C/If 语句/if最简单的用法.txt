@@ -1,0 +1,28 @@
+/*
+    2018年9月20日17:15:28
+	目的：了解if最简单的用法
+*/
+# include <stdio.h>
+
+int main(void)
+{
+	if (3 > 2)
+		printf("AAAA\n"); //会输出
+	if (3)
+		printf("BBBB\n");  //会输出
+	if (0)
+		printf("CCCC\n");  //不会输出
+	if (0 == 0)
+		printf("DDDD\n");  //会输出
+
+	return 0;
+}
+/*
+在VS中的输出结果是：
+-------------------
+AAAA
+BBBB
+DDDD
+-------------------
+
+*/
